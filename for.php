@@ -13,8 +13,6 @@ $inc = trim(fgets(STDIN));
 
 echo "Here are the numbers between $start and $end.\n";
 
-//[ condition ] ? [value if true] : [ value if false ];
-
 if (empty($inc) || !is_numeric($inc)) {
 	$inc = 1;
 

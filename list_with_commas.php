@@ -1,17 +1,27 @@
 <?php
 
-function humanized_list($string) {
+function humanized_list($string, $sort = false) {
 
 	$array = explode(', ', $string);
 	sort($array);
 	$last_item = array_pop($array);
-	return implode(', ', $array) . ", and $last_item";
+
+	if ($sort == true) {
+		sort($array);
+	} 	else {
+			$array;
+	}
+
+	array_push($array, "and $last_item");
+
+	$string = implode(', ', $array);
+	return $string;
 }
 
 $physicists_string = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
 
 
-$famous_fake_physicists = humanized_list($physicists_string);
+$famous_fake_physicists = humanized_list($physicists_string, true);
 	echo "Some of the most famous fictional theoretical physicists are {$famous_fake_physicists}." . PHP_EOL;
 
 
