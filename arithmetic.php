@@ -1,51 +1,74 @@
 <?php
 
-function error($a, $b) {
+function error($a, $b) 
+{
 	return "ERROR: Both $a and $b should be numbers.";
 }
 
-function adder($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
+function adder($a, $b) 
+{
+	if (is_numeric($a) && is_numeric($b)) 
+	{
 		return $a + $b . PHP_EOL;
-  	} else {
+  	} 
+  	else 
+  	{
 		echo error($a, $b);
 	}
 		echo PHP_EOL;
 }
 
-function subtract($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
+function subtract($a, $b) 
+{
+	if (is_numeric($a) && is_numeric($b)) 
+	{
 		return $a - $b . PHP_EOL;
-  	} else {
+  	} 
+  	else 
+  	{
 		echo error($a, $b);
 	}
 		echo PHP_EOL;
 }
 
-function multiply($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
+function multiply($a, $b) 
+{
+	if (is_numeric($a) && is_numeric($b)) 
+	{
 		return $a * $b . PHP_EOL;
-  	} else {
+  	} 
+  	else 
+  	{
 		echo error($a, $b);
 	}
 		echo PHP_EOL;
 }
 
-function divide($a, $b) {
-if ($a == 0 || $b == 0) {
-return false; 
-  } elseif (is_numeric($a) && is_numeric($b)) {
-return $a / $b . PHP_EOL; 
-  } else {
-echo error($a, $b);
-  }
-echo PHP_EOL;
+function divide($a, $b) 
+{
+	if ($a == 0 || $b == 0) 
+	{
+		return false; 
+	} 
+	elseif (is_numeric($a) && is_numeric($b)) 
+	{
+		return $a / $b . PHP_EOL; 
+	} 
+	else 
+	{
+		echo error($a, $b);
+	}
+		echo PHP_EOL;
 }
 
-function modulus($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
+function modulus($a, $b) 
+{
+	if (is_numeric($a) && is_numeric($b)) 
+	{
 		return $a % $b;
-  	} else {
+  	} 
+  	else 
+  	{
 		echo error($a, $b);
 	}
 		echo PHP_EOL;

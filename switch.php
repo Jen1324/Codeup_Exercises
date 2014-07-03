@@ -8,7 +8,8 @@ date_default_timezone_set('America/Chicago');
 $day_of_week = date('N');
 $day_of_week = 6;
 
-switch($day_of_week) {
+switch($day_of_week) 
+{
     case 1:
     	echo 'Monday' . PHP_EOL;
     	break;
@@ -34,24 +35,31 @@ switch($day_of_week) {
 }
 
 
-if ($day_of_week == 1) {
+if ($day_of_week == 1) 
+{
 	echo 'Monday' . PHP_EOL;
 }
-elseif ($day_of_week == 2) {
+elseif ($day_of_week == 2) 
+{
 	echo 'Tuesday' . PHP_EOL;
 }
-elseif ($day_of_week == 3) {
+elseif ($day_of_week == 3) 
+{
 	echo 'Wednesday' . PHP_EOL;
 }
-elseif ($day_of_week == 4) {
+elseif ($day_of_week == 4) 
+{
 	echo 'Thursday' . PHP_EOL;
 }
-elseif ($day_of_week == 5) {
+elseif ($day_of_week == 5) 
+{
 	echo 'Friday' . PHP_EOL;
 }
-elseif ($day_of_week == 6) {
+elseif ($day_of_week == 6) 
+{
 	echo 'Saturday' . PHP_EOL;
 }
-elseif ($day_of_week == 7) {
+elseif ($day_of_week == 7) 
+{
 	echo 'Sunday' . PHP_EOL;
 }

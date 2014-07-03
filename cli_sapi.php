@@ -9,7 +9,8 @@ fwrite(STDOUT, 'Guess a number?');
 // Get the input from user
 $number = (int) fgets(STDIN);
 
-if ($number === $guess) {
+if ($number === $guess) 
+{
 
 // Output the user's name
 fwrite(STDOUT, "Winning\n");

@@ -1,8 +1,8 @@
 <?php
 
-function getOffset() {
+function getOffset() 
+{
     $page = isset($_GET['page']) ? $_GET['page'] : 1;
-
     return ($page - 1) * 4;
 }
 

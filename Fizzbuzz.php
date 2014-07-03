@@ -1,22 +1,21 @@
 <?php
 
-for ($num = 1; $num <= 100; $num++) {
-
-	if ($num % 15 == 0) {
+for ($num = 1; $num <= 100; $num++) 
+{
+	if ($num % 15 == 0) 
+	{
 		echo "FizzBuzz\n";
     }
-
-	elseif ($num % 3 == 0) {
+	elseif ($num % 3 == 0) 
+	{
 		echo "Fizz\n";
 	}
-	
-	elseif ($num % 5 == 0) {
+	elseif ($num % 5 == 0) 
+	{
 		echo "Buzz\n";
-
 	}
-
-	else {
+	else 
+	{
 		echo "$num\n";
-		} 
-
+	} 
 }

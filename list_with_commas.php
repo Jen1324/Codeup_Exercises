@@ -1,14 +1,18 @@
 <?php
 
-function humanized_list($string, $sort = false) {
+function humanized_list($string, $sort = false) 
+{
 
 	$array = explode(', ', $string);
 	sort($array);
 	$last_item = array_pop($array);
 
-	if ($sort == true) {
+	if ($sort == true) 
+	{
 		sort($array);
-	} 	else {
+	} 	
+	else 
+	{
 			$array;
 	}
 

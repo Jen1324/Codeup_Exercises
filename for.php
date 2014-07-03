@@ -13,14 +13,14 @@ $inc = trim(fgets(STDIN));
 
 echo "Here are the numbers between $start and $end.\n";
 
-if (empty($inc) || !is_numeric($inc)) {
+if (empty($inc) || !is_numeric($inc)) 
+{
 	$inc = 1;
-
 }
 
-for ($num = $start; $num <= $end; $num += $inc) {
+for ($num = $start; $num <= $end; $num += $inc) 
+{
 	echo "$num\n";
-
 }
 
 

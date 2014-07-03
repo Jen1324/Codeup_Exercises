@@ -23,32 +23,36 @@
 
  $fruits = array('Strawberry', 'Banana', 'Grape'); 
  
- 	for($fruit = 0; $fruit < count($fruits); $fruit++) {
+ 	for($fruit = 0; $fruit < count($fruits); $fruit++) 
+ 	{
  		echo "$fruits[$fruit]\n";
  	}
 
- 	foreach ($fruits as $fruit) {
+ 	foreach ($fruits as $fruit) 
+ 	{
  		echo $fruit . PHP_EOL;
  	}
 
 
-  $fruits = array('Strawberry' => 'Red', 'Banana' => 'Yellow', 'Grape' => 'Green'); 
+$fruits = array('Strawberry' => 'Red', 'Banana' => 'Yellow', 'Grape' => 'Green'); 
  
- foreach($fruits as $key => $color) {
- 	echo "This is a $key and its color is $color!\n";
- }
+	foreach($fruits as $key => $color) 
+	{
+ 		echo "This is a $key and its color is $color!\n";
+ 	}
  
 
 // v same as this ^
 
 
- $fruits = [
+$fruits = [
  	'apples' => 'red',
  	'oranges' => 'orange',
  	'bananas' => 'yellow',
  	'donuts' => 'purple'
  	];
 
-foreach ($fruits as $fruit => $color) {
-	echo "{$fruit} are {$color}\n";
-}
+	foreach ($fruits as $fruit => $color) 
+	{
+		echo "{$fruit} are {$color}\n";
+	}

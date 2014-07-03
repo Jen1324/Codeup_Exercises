@@ -70,13 +70,17 @@
 // $heroes = ['batman', 'superman', 'bart'];
 // inspect($heroes); 
 
-function adder($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
-	echo $a + $b;
-  } else {
-	echo 'ERROR: Both $a and $b should be numbers.';
-}
-	PHP_EOL;
+function adder($a, $b) 
+{
+	if (is_numeric($a) && is_numeric($b)) 
+	{
+		echo $a + $b;
+	} 
+	else 
+	{
+		echo 'ERROR: Both $a and $b should be numbers.';
+	}
+		PHP_EOL;
 }
 
 adder("2 + 3", 1);

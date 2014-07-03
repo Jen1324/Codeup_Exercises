@@ -1,6 +1,7 @@
 <?php
 
-class Vehicle {
+class Vehicle 
+{
     
     private $name = 'Default';
 
@@ -21,7 +22,8 @@ class Vehicle {
 
 }
 
-class Car extends Vehicle {
+class Car extends Vehicle 
+{
 
     public function beep()
     {
@@ -40,7 +42,8 @@ class Car extends Vehicle {
 
 }
 
-class Truck extends Vehicle {
+class Truck extends Vehicle 
+{
 
     public function openTailgate()
     {

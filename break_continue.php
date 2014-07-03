@@ -30,7 +30,8 @@
 
 $fruit = 'donut';
 
-switch($fruit) {
+switch($fruit) 
+{
 	case 'apple':
 		echo 'Apples are red' . PHP_EOL;
 		break;
